@@ -1,6 +1,8 @@
 const API_BASE_URL = 'https://api.aladhan.com/v1';
 
 const cityCoordinates = {
+  Istanbul: { lat: 41.0082, lon: 28.9784 },
+  Ankara: { lat: 39.9334, lon: 32.8597 },
   Makkah: { lat: 21.4225, lon: 39.8262 },
   Madinah: { lat: 24.4672, lon: 39.6024 },
   Riyadh: { lat: 24.7136, lon: 46.6753 },
@@ -8,8 +10,8 @@ const cityCoordinates = {
   Dammam: { lat: 26.3927, lon: 49.9777 }
 };
 
-export async function fetchPrayerTimes(city = 'Makkah') {
-  const coords = cityCoordinates[city] || cityCoordinates.Makkah;
+export async function fetchPrayerTimes(city = 'Istanbul') {
+  const coords = cityCoordinates[city] || cityCoordinates.Istanbul;
   const today = new Date();
   const dateString = `${today.getDate()}-${today.getMonth() + 1}-${today.getFullYear()}`;
 
