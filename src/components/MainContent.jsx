@@ -11,6 +11,7 @@ import Typography from "@mui/material/Typography";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import { fetchPrayerTimes } from "../services/prayerApi";
+import Adhkar from "./Adhkar";
 
 export default function MainContent() {
   const [selectedCity, setSelectedCity] = useState("Istanbul");
@@ -320,6 +321,9 @@ export default function MainContent() {
           ))}
         </Box>
       )}
+
+      {/* قسم الأذكار */}
+      <Adhkar />
     </Box>
   );
 }
