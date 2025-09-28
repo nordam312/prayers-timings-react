@@ -1,16 +1,171 @@
-# React + Vite
+# 🕌 Prayer Times App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
 
-Currently, two official plugins are available:
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-success)](https://prayertimeee.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[**🌐 Live Demo**](https://prayertimeee.netlify.app/) | [**🚀 Deploy Your Own**](#deployment)
 
-## React Compiler
+</div>
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📖 Overview
 
-## Expanding the ESLint configuration
+A modern and elegant web application for displaying prayer times for Turkish and Saudi cities with daily Islamic remembrances (Adhkar). Features an attractive user interface and responsive design that works seamlessly across all devices.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔗 **Live Website:** [https://prayertimeee.netlify.app/](https://prayertimeee.netlify.app/)
+
+## ✨ Features
+
+- 🕌 **Accurate Prayer Times**: Display all five daily prayer times with high accuracy
+- ⏰ **Live Countdown**: Shows remaining time until next prayer
+- 📱 **Responsive Design**: Works seamlessly on mobile, tablet, and desktop
+- 🌙 **Elegant Dark Theme**: Warm, eye-comfortable colors
+- 📿 **Daily Adhkar**: Various Islamic remembrances with translation and rewards
+- 🔄 **Auto Updates**: Real-time updates for time and Adhkar
+- 🏙️ **Multiple Cities**: Support for major Turkish and Saudi cities
+
+## 🛠️ Technologies Used
+
+- **Frontend Framework:** React 18 + Vite
+- **UI Library:** Material-UI (MUI)
+- **Styling:** CSS-in-JS + Custom CSS
+- **API:** Aladhan Prayer Times API
+- **Icons:** Material Icons
+- **Hosting:** Netlify
+- **Language:** JavaScript (ES6+)
+
+## 🏙️ Supported Cities
+
+### 🇹🇷 Turkey
+- Istanbul
+- Ankara
+
+### 🇸🇦 Saudi Arabia
+- Makkah (Mecca)
+- Madinah (Medina)
+- Riyadh
+- Jeddah
+- Dammam
+
+## 🚀 Installation & Setup
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation Steps
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/yourusername/prayers_timings.git
+cd prayers_timings
+```
+
+2. **Install dependencies**
+```bash
+npm install
+```
+
+3. **Run development server**
+```bash
+npm run dev
+```
+
+4. **Open browser at**
+```
+http://localhost:5173
+```
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+Production files will be in the `dist/` folder
+
+## 📦 Deployment
+
+### Deploy to Netlify
+
+#### Method 1: Via GitHub (Recommended)
+
+1. Push your project to GitHub
+2. Go to [Netlify](https://www.netlify.com)
+3. Click "New site from Git"
+4. Select your repository
+5. Configuration:
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+6. Click Deploy site
+
+#### Method 2: Netlify CLI
+
+```bash
+# Install Netlify CLI
+npm install -g netlify-cli
+
+# Login
+netlify login
+
+# Deploy
+netlify deploy --prod --dir=dist
+```
+
+#### Method 3: Drag & Drop
+
+1. Build the project: `npm run build`
+2. Go to [Netlify Drop](https://app.netlify.com/drop)
+3. Drag the `dist` folder to the page
+
+## 📱 Screenshots
+
+### Main Page
+- Current time display
+- City selection
+- Next prayer countdown
+
+### Prayer Cards
+- Unique icons for each prayer
+- Accurate timings
+- Current prayer highlighting
+
+### Adhkar Section
+- Various remembrances
+- English translations
+- Rewards and virtues
+- Auto-change every 10 seconds
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👨‍💻 Developer
+
+Developed by [Your Name]
+
+## 🙏 Acknowledgments
+
+- [Aladhan API](https://aladhan.com/prayer-times-api) for providing prayer times data
+- [Material-UI](https://mui.com/) for UI components
+- [Netlify](https://www.netlify.com/) for free hosting
+
+---
+
+<div align="center">
+
+**[🌐 Visit Website](https://prayertimeee.netlify.app/)**
+
+Made with ❤️ for the Muslim Community
+
+</div>
